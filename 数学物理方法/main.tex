@@ -1,0 +1,178 @@
+\documentclass[10pt,a4paper,twocolumn]{ctexart}
+\setlength{\columnseprule}{0.1pt}
+%,twocolumn
+%\usepackage[latin1]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\newcommand{\newc}{\newcommand}
+\newc{\be}{\begin{equation}}
+\newc{\ee}{\end{equation}}
+\newc{\Lra}{\Longrightarrow\quad}
+\newc{\lvl}{\Bigg|}
+\newc{\bc}{\because\ }
+\newc{\so}{\therefore\ }
+\newc{\om}{\omega}
+\newc{\al}{\alpha}
+\newc{\Dt}{\Delta}
+\newc{\ld}{\lambda}
+\newc{\eo}{\varepsilon_0}
+\newc{\tht}{\theta}
+\newc{\pt}{\partial}
+\numberwithin{equation}{subsection} 
+\renewcommand{\theequation}{\arabic{subsection}.\arabic{equation}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[colorlinks=true,%        color link				   %
+citecolor=blue,%		  % cite color							   %
+linkcolor=blue,%		  % link color							   %
+urlcolor=blue%			  % url color							   %
+]{hyperref}				  % create hyperlinks		 			   %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Page Layout %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[%
+paper=a4paper,%
+top=2cm,% 上 3.5cm %
+bottom=2cm,% 下 2.5cm %
+left=1.5cm,% 左 2.7cm %
+right=1.5cm,% 右 2.7cm %
+%headheight=1.0cm,% 页眉 2.5cm %
+%footskip=0.7cm% 页脚 1.8cm %
+]{geometry} % 页面设置 %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+\title{\Large{湖南师范大学数达学院}\\数学物理方法课后习题集解答}
+
+\date{\today}
+\author{陈祖成}
+\maketitle
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{abstract}
+	此系四川大学数学学院高等数学、微分方程教研室编《高等数学--物理类专用（第四册）（第四版）》所有课后习题的详细答案。
+	未完成草稿，如有错误，欢迎纠正。
+\end{abstract}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\tableofcontents
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{复数与复变函数}	
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{计算:}
+\subsubsection{$(\sqrt{2}- i) - i (1 - i\sqrt{2})$}
+解：
+	\begin{align}
+		& (\sqrt{2}-i)-i(1-i \sqrt{2}) \\
+		= & \sqrt{2}-i-i + i^2 \sqrt{2} \\
+		= & \sqrt{2}-2i-\sqrt{2} \\
+		= & -2 i
+	\end{align}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{$\frac{1+2 i}{3-4 i}+\frac{2-i}{5 i}$}
+解：
+\begin{align}
+		& \frac{1+2 i}{3-4 i}+\frac{2-i}{5 i} \\
+		= & \frac{(1+2 i) 5 i+(2-i)(3-4 i)}{(3-4 i) 5 i} \\
+		= & \frac{5 i + 10i^2 +6-8 i-3 i + 4i^2}{5(3 i-4i^2)} \\
+		= & \frac{5 i-10+6-11 i-4}{5(3 i+4)} \\
+		= & \frac{-6 i-8}{5(3 i+4)} \\
+		= & -\frac{2(4+3 i)}{5(4+3 i)} \\
+		= & -\frac{2}{5}
+	\end{align}
+	
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{$\frac{5}{(1-i)(2-i)(3-i)}$}
+\begin{align}
+		& \frac{5}{(1-i)(2-i)(3-i)} \\
+		= & \frac{5(1+i)(2+i)(3+i)}{(1-i)(2-i)(3-i)(1+i)(2+i)(3+i)} \\
+		= & \frac{5(2+i+2 i-1)(3+i)}{(1^2-i^2) \times (2^2-i^2) \times (3^2-i^2)} \\
+		= & \frac{5(1+3 i)(3+i)}{2 \times 5 \times 10} \\
+		= & \frac{(1+3 i)(3+i)}{20} \\
+		= & \frac{3+i+9 i-3}{20} \\
+		= & \frac{10 i}{20} \\
+		= & \frac{i}{2}
+	\end{align}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{$(1-i)^4$}
+\begin{align}
+		& (1-i)^4 \\
+		= & {\left[(1-i)^2\right]^2 } \\
+		= & {[1-2 i-1]^2 } \\
+		= & 4 i^2 \\
+		= & -4
+	\end{align}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{求下列复数的实部$u$与虚部$v$，模$r$与辐角$\theta$：}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{$\frac{1-2 i}{3-4 i}-\frac{2-i}{5 i}$}
+\begin{align}
+		& \frac{1-2 i}{3-4 i}-\frac{2-i}{5 i} \\
+		& =\frac{(1-2 i) 5 i-(2-i)(3-4 i)}{(3-4 i) 5 i} \\
+		& =\frac{5 i+10-(6-8 i-3 i-4)}{5(3 i+4)} \\
+		& =\frac{5 i+10-2+11 i}{5(4+3 i)} \\
+		& =\frac{8+16 i}{5(4+3 i)} \\
+		& =\frac{8(1+2 i)(4-3 i)}{5(4+3 i)(4-3 i)} \\
+		& =\frac{8(4-3 i+8 i+6)}{5 \times 25} \\
+		& =\frac{8(10+5 i)}{5 \times 25} \\
+		& =\frac{8(2+i)}{25} \\
+		& =\frac{16}{25}+\frac{8}{25} i \\
+		& = \frac{8}{25}\sqrt{5} e^{i(\arctan \frac{1}{2} + 2k\pi)}
+	\end{align}
+所以$u=\frac{16}{25}$， $v=\frac{8}{25}$， $r=\frac{8}{25}\sqrt{5}$， $\theta = \arctan \frac{1}{2} + 2k\pi$。
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{$(\frac{1+\sqrt{3} i}{2})^n, n=2, 3, 4$}
+首先$\frac{1+\sqrt{3} i}{2} = e^{i(\frac{\pi}{3}+ 2m\pi)}$
+\begin{itemize}
+	\item n=2时
+	\begin{align}
+		& \left(\frac{1+\sqrt{3} i}{2}\right)^2 \\
+		= & (e^{i(\frac{\pi}{3}+ 2m\pi)})^2 \\
+		= & e^{i(\frac{2\pi}{3}+ 4m\pi)} \\		
+		= & e^{i(\frac{2\pi}{3}+ 4m\pi + 2k\pi)} \\
+		= & e^{i(\frac{2\pi}{3}+ 2k\pi)} \\
+		= & -\frac{1}{2}+\frac{\sqrt{3}}{2} i
+	\end{align}
+	所以$u=-\frac{1}{2}$， $v=\frac{\sqrt{3}}{2}$， $r=1$， $\theta = \frac{2\pi}{3} + 2k\pi$。
+	
+	
+	\item n=3时
+	\begin{align}
+		& \left(\frac{1+\sqrt{3} i}{2}\right)^3 \\
+		= & (e^{i(\frac{\pi}{3}+ 2m\pi)})^3 \\
+		= & e^{i(\pi+ 6m\pi)} \\
+		= & e^{i(\pi+ 2k\pi)} \\
+		= & -1
+	\end{align}
+	所以$u=-1$， $v=0$， $r=1$， $\theta = \pi+ 2k\pi$。
+	
+	
+	\item n=4时
+	\begin{align}
+		& \left(\frac{1+\sqrt{3} i}{2}\right)^4 \\
+		= & (e^{i(\frac{\pi}{3}+ 2m\pi)})^4 \\
+		= & e^{i(\frac{4\pi}{3}+ 8m\pi)} \\		
+		= & e^{i(-\frac{2\pi}{3} + 2k\pi)} \\
+		= & -\frac{1}{2}-\frac{\sqrt{3}}{2} i 
+	\end{align}
+	所以$u=-\frac{1}{2}$， $v=-\frac{\sqrt{3}}{2}$， $r=1$， $\theta = -\frac{2\pi}{3} + 2k\pi$。
+\end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{$\sqrt{1+i}$}
+\begin{align}
+	& \sqrt{1+i} \\
+	& =(1+i)^{\frac{1}{2}}\\
+	& =\left[\sqrt{2} e^{i\left(\frac{\pi}{4}+2 k \pi\right)}\right]^{\frac{1}{2}} \\
+	& =2^{\frac{1}{4}} e^{i\left(\frac{\pi}{8}+k \pi\right)} \\
+	& =2^{\frac{1}{4}}\left[\cos \left(\frac{\pi}{8}+k \pi\right)+i \sin \left(\frac{\pi}{8}+k \pi\right)\right]
+\end{align}
+所以$u=2^{\frac{1}{4}} \cos \left(\frac{\pi}{8}+k \pi\right)$， $v=2^{\frac{1}{4}} \sin \left(\frac{\pi}{8}+k \pi\right)$， $r=2^{\frac{1}{4}}$， $\theta = \frac{\pi}{8}+k \pi$。
+
+\end{document}
